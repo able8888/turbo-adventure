@@ -1,0 +1,10 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    line1=list(map(int,input().split()))
+    line2=list(map(int,input().split()))
+    a1=min(line1)
+    a2=min(line2)
+    sum_a1=sum([a1 + i for i in line2])
+    sum_a2=sum([a2 + i for i in line1])
+    print(min(sum_a1,sum_a2))
